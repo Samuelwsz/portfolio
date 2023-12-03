@@ -1,9 +1,12 @@
+import Nav from "./components/Nav"
 import "./global.css"
 
 function App() {
   return (
     <>
-      <div className="text-red-400">a</div>
+      <div className="bg-slate-900">
+        <Nav />
+      </div>
     </>
   )
 }
