@@ -17,14 +17,17 @@ export default function Banner() {
   return (
     <div
       //comando para as animações
-      data-aos="fade-up"
+      // data-aos="fade-up"
       className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:gap-28 items-center"
     >
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
-        <h1 className="text-[52px] font-semibold mb-8 leading-normal">
+        <h1
+        
+          className="text-[52px] font-semibold mb-8 leading-normal"
+        >
           Welcome to <span className="text-blue-300">My Website</span>
         </h1>
-        <p>
+        <p  >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores
           laudantium, quis nam, rerum quisquam eos velit adipisci voluptatum
           omnis reiciendis officia enim vel. Neque odio quis eius saepe ipsum?
@@ -49,6 +52,7 @@ export default function Banner() {
         </div>
       </div>
       <img
+     //   data-aos="fade-left"
         src="https://github.com//samuelwsz.png"
         alt=""
         className="rounded-full border-2 p-1 border-blue-300 img_glow w-44 h-44"

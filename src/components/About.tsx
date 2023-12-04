@@ -1,12 +1,6 @@
-export default function About() {
-  const handleButtonClick = () => {
-    // Rola a página de volta para o topo
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Adiciona um efeito de rolagem suave
-    })
-  }
+import { Link } from "react-scroll"
 
+export default function About() {
   return (
     <>
       <div
@@ -35,12 +29,11 @@ export default function About() {
           <div className="flex mt-8 gap-2">
             <div className="flex items-center justify-center">
               <div className="flex space-x-2">
-                <button
-                  onClick={handleButtonClick}
-                  className="neno-button neno-button:hover shadow-xl hover:shadow-blue-300/50 text-white border-2 hover:bg-blue-400  border-blue-300  rounded-lg py-4 px-8 uppercase relative overflow-hidden"
-                >
-                  Resume
-                </button>
+                <Link to="Home">
+                  <button className="neno-button neno-button:hover shadow-xl hover:shadow-blue-300/50 text-white border-2 hover:bg-blue-400  border-blue-300  rounded-lg py-4 px-8 uppercase relative overflow-hidden">
+                    Resume
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
