@@ -1,20 +1,32 @@
-import { AiFillGithub } from "react-icons/ai"
-import { FaLinkedinIn } from "react-icons/fa"
-
 export default function About() {
+  const handleButtonClick = () => {
+    // Rola a página de volta para o topo
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Adiciona um efeito de rolagem suave
+    })
+  }
+
   return (
     <>
-      <div className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-row-reverse justify-between lg:gap-28 items-center">
+      <div
+        id="About"
+        className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex flex-col lg:flex-row md:flex-row justify-between lg:gap-28 items-center"
+      >
         <img
+          data-aos="fade-down"
           src="https://github.com//samuelwsz.png"
           alt=""
-          className="rounded border-2 p-1 border-fuchsia-500 img_glow w-44 h-44"
+          className="rounded border-2 p-1 border-blue-300  img_glow w-44 h-44"
         />
         <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
-          <h1 className="text-[52px] font-semibold mb-8 leading-normal text-fuchsia-500 uppercase">
+          <h1
+            data-aos="fade-right"
+            className="text-[52px] font-semibold mb-8 leading-normal text-blue-300  uppercase"
+          >
             About Me
           </h1>
-          <p>
+          <p data-aos="fade-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             dolores laudantium, quis nam, rerum quisquam eos velit adipisci
             voluptatum omnis reiciendis officia enim vel. Neque odio quis eius
@@ -23,18 +35,12 @@ export default function About() {
           <div className="flex mt-8 gap-2">
             <div className="flex items-center justify-center">
               <div className="flex space-x-2">
-                <a
-                  href=""
-                  className="text-fuchsia-600 hover:text-fuchsia-500 glow glow:hover p-2 rounded-full"
+                <button
+                  onClick={handleButtonClick}
+                  className="neno-button neno-button:hover shadow-xl hover:shadow-blue-300/50 text-white border-2 hover:bg-blue-400  border-blue-300  rounded-lg py-4 px-8 uppercase relative overflow-hidden"
                 >
-                  <AiFillGithub className="text-[28px]" />
-                </a>
-                <a
-                  href=""
-                  className="text-fuchsia-600 hover:text-fuchsia-500 glow glow:hover p-2 rounded-full"
-                >
-                  <FaLinkedinIn className="text-[28px]" />
-                </a>
+                  Resume
+                </button>
               </div>
             </div>
           </div>

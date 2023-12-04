@@ -1,12 +1,28 @@
 import { AiFillGithub } from "react-icons/ai"
 import { FaLinkedinIn } from "react-icons/fa"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 export default function Banner() {
+  //animção ao carregar os componentes
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-quart",
+      delay: 0,
+      duration: 750,
+    })
+  }, [])
+
   return (
-    <div className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex flex-col-reverse lg:flex-row md:flex-row-reverse justify-between lg:gap-28 items-center">
+    <div
+      //comando para as animações
+      data-aos="fade-up"
+      className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:gap-28 items-center"
+    >
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
         <h1 className="text-[52px] font-semibold mb-8 leading-normal">
-          Welcome to <span className="text-fuchsia-500">My Website</span>
+          Welcome to <span className="text-blue-300">My Website</span>
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores
@@ -18,13 +34,13 @@ export default function Banner() {
             <div className="flex space-x-2">
               <a
                 href=""
-                className="text-fuchsia-600 hover:text-fuchsia-500 glow glow:hover p-2 rounded-full"
+                className="text-blue-300 hover:text-blue-300 glow glow:hover p-2 rounded-full"
               >
                 <AiFillGithub className="text-[28px]" />
               </a>
               <a
                 href=""
-                className="text-fuchsia-600 hover:text-fuchsia-500 glow glow:hover p-2 rounded-full"
+                className="text-blue-300 hover:text-blue-300 glow glow:hover p-2 rounded-full"
               >
                 <FaLinkedinIn className="text-[28px]" />
               </a>
@@ -35,7 +51,7 @@ export default function Banner() {
       <img
         src="https://github.com//samuelwsz.png"
         alt=""
-        className="rounded-full border-2 p-1 border-fuchsia-500 img_glow w-44 h-44"
+        className="rounded-full border-2 p-1 border-blue-300 img_glow w-44 h-44"
       />
     </div>
   )

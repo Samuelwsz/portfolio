@@ -1,6 +1,7 @@
 import About from "./components/About"
 import Banner from "./components/Banner"
 import Nav from "./components/Nav"
+import Services from "./components/Services"
 import "./global.css"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Nav />
         <Banner />
         <About />
+        <Services />
       </div>
     </>
   )

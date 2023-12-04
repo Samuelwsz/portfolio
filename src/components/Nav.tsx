@@ -54,27 +54,27 @@ export default function Nav() {
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px]">
               <Link spy={true} smooth={true} to="Home">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
                   Home
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="About">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
                   About
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Services">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
                   Services
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Projects">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
                   Projects
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Contact">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
                   Contact
                 </li>
               </Link>
