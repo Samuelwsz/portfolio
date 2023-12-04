@@ -16,27 +16,27 @@ export default function Nav() {
         <ul className="text-center text-xl p-20">
           <Link spy={true} smooth={true} to="Home">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Home
+              Inicio
             </li>
           </Link>
           <Link spy={true} smooth={true} to="About">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              About
+              Sobre
             </li>
           </Link>
           <Link spy={true} smooth={true} to="Services">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Services
+              Tecnologias
             </li>
           </Link>
           <Link spy={true} smooth={true} to="Projects">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Projects
+              Projetos
             </li>
           </Link>
           <Link spy={true} smooth={true} to="Contact">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Contact
+              Contato
             </li>
           </Link>
         </ul>
@@ -58,27 +58,27 @@ export default function Nav() {
             <ul className="flex gap-8 mr-16 text-[18px]">
               <Link spy={true} smooth={true} to="Home">
                 <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
-                  Home
+                  Início
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="About">
                 <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
-                  About
+                  Sobre
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Services">
                 <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
-                  Services
+                  Tecnologias
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Projects">
                 <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
-                  Projects
+                  Projetos
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Contact">
                 <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
-                  Contact
+                  Contato
                 </li>
               </Link>
             </ul>
