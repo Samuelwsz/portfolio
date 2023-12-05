@@ -25,7 +25,7 @@ export default function Modal({
           <Dialog.Title className="text-center text-lg font-semibold uppercase mb-2">
             {nome}
           </Dialog.Title>
-          <p className="text-center my-2">{descricao}</p>
+          <p className="my-2 text-justify flex justify-center">{descricao}</p>
           <div className="flex justify-between">
             <div>
               <h1>Tecnologias Utilizadas</h1>
