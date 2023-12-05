@@ -5,6 +5,7 @@ import codechella from "../assets/codechela.png"
 import meteora from "../assets/meteora.png"
 import aluroni from "../assets/aluroni.png"
 import movieapi from "../assets/movieapi.png"
+import apiclima from "../assets/apiclima.png"
 
 export default function Projects() {
   return (
@@ -128,6 +129,30 @@ export default function Projects() {
               "Axios",
               "Vite",
               "TailwindCSS",
+            ]}
+          />
+        </Dialog.Root>
+
+        <Dialog.Root>
+          <Dialog.Trigger asChild>
+            <img
+              data-aos="fade-up"
+              src={apiclima}
+              alt="alurageekchalenge5"
+              className="text-[26px] flex items-center justify-center font-semibold text-blue-300 rounded-3xl h-40 w-64 p-1 border-2 border-blue-300 cursor-pointer b_glow"
+            />
+          </Dialog.Trigger>
+          <Modal
+            nome="Consulta do tempo"
+            descricao="Estudo da api de clima opemWeather"
+            linkProjeto="https://api-clima-hazel.vercel.app/"
+            linkGithub="https://github.com/Samuelwsz/APIclima"
+            tecnologias={[
+              "React",
+              "TailwindCSS",
+              "Vite",
+              "axios",
+              "TypeScript",
             ]}
           />
         </Dialog.Root>

@@ -26,6 +26,7 @@ export default function Modal({
             {nome}
           </Dialog.Title>
           <p className="my-2 text-justify flex justify-center">{descricao}</p>
+          <hr className="my-3 w-full bg-blue-500" />
           <div className="flex justify-between">
             <div>
               <h1>Tecnologias Utilizadas</h1>
@@ -35,6 +36,7 @@ export default function Modal({
                 })}
               </ul>
             </div>
+
             <div>
               <h1>Repositorios do projeto</h1>
               <div className="flex items-center justify-center gap-5 mt-2">
