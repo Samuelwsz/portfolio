@@ -15,7 +15,7 @@ export default function Contact() {
           />
           <input
             className="w-full my-3 rounded-lg bg-slate-800 p-4 border-2 border-blue-300 text-slate-500 outline-none b_glow"
-            type="text"
+            type="email"
           />
         </div>
         <textarea
