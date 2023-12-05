@@ -26,7 +26,7 @@ export default function Nav() {
           </Link>
           <Link spy={true} smooth={true} to="Services">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Tecnologias
+              Competências
             </li>
           </Link>
           <Link spy={true} smooth={true} to="Projects">
@@ -68,7 +68,7 @@ export default function Nav() {
               </Link>
               <Link spy={true} smooth={true} to="Services">
                 <li className="hover:text-blue-300 transition border-b-2 border-slate-900 hover:border-blue-300  cursor-pointer">
-                  Tecnologias
+                  Competências
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Projects">

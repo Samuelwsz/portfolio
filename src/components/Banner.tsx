@@ -24,18 +24,20 @@ export default function Banner() {
         <h1 className="text-[52px] font-semibold mb-2 leading-normal">
           Bem vindo ao meu <span className="text-blue-300">Website</span>
         </h1>
-        
+
         <div className="flex mt-4 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2">
               <a
-                href=""
+                href="https://github.com/Samuelwsz"
+                target="_blank"
                 className="text-blue-300 hover:text-blue-300 glow glow:hover p-2 rounded-full"
               >
                 <AiFillGithub className="text-[32px]" />
               </a>
               <a
-                href=""
+                href="https://www.linkedin.com/in/samuel-wsz/"
+                target="_blank"
                 className="text-blue-300 hover:text-blue-300 glow glow:hover p-2 rounded-full"
               >
                 <FaLinkedinIn className="text-[32px]" />

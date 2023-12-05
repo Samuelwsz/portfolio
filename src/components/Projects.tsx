@@ -1,3 +1,5 @@
+import alurageek from '../assets/alurageek.png'
+
 export default function Projects() {
   return (
     <div
@@ -5,15 +7,14 @@ export default function Projects() {
       className="p-20 flex flex-col items-center justify-center"
     >
       <h1 className="text-[52px] font-semibold mb-20 leading-normal uppercase text-blue-300">
-        Projects
+        Projetos
       </h1>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-20">
-        <a href="">
-          <p className="text-white">a</p>
+        <a href="https://challengefrontend5-alura-geek.vercel.app/" target='_blank'>
           <img
             data-aos="fade-up"
-            src="https://github.com//samuelwsz.png"
-            alt=""
+            src={alurageek}
+            alt="alurageekchalenge5"
             className="text-[26px] flex items-center justify-center font-semibold text-blue-300 rounded-3xl h-40 w-64 p-1 border-2 border-blue-300 b_glow"
           />
         </a>
