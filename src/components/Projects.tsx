@@ -1,4 +1,6 @@
-import alurageek from '../assets/alurageek.png'
+import * as Dialog from "@radix-ui/react-dialog"
+import alurageek from "../assets/alurageek.png"
+import Modal from "./Modal"
 
 export default function Projects() {
   return (
@@ -10,28 +12,38 @@ export default function Projects() {
         Projetos
       </h1>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-20">
-        <a href="https://challengefrontend5-alura-geek.vercel.app/" target='_blank'>
-          <img
-            data-aos="fade-up"
-            src={alurageek}
-            alt="alurageekchalenge5"
-            className="text-[26px] flex items-center justify-center font-semibold text-blue-300 rounded-3xl h-40 w-64 p-1 border-2 border-blue-300 b_glow"
+        {/*  <a
+          href="https://challengefrontend5-alura-geek.vercel.app/"
+          target="_blank"
+  ></a>*/}
+        <Dialog.Root>
+          <Dialog.Trigger asChild>
+            <img
+              data-aos="fade-up"
+              src={alurageek}
+              alt="alurageekchalenge5"
+              className="text-[26px] flex items-center justify-center font-semibold text-blue-300 rounded-3xl h-40 w-64 p-1 border-2 border-blue-300 cursor-pointer b_glow"
+            />
+          </Dialog.Trigger>
+          <Modal
+            nome="Challenge front end 5 da Alura"
+            linkProjeto="https://challengefrontend5-alura-geek.vercel.app/"
+            linkGithub="https://github.com/Samuelwsz/challengefrontend5AluraGeek"
+            tecnologias="React React router dom TypeScript Emotion Vite"
           />
-        </a>
-        <a href="">
-          <img
-            src="https://github.com//samuelwsz.png"
-            alt=""
-            className="text-[26px] flex items-center justify-center font-semibold text-blue-300 rounded-3xl h-40 w-64 p-1 border-2 border-blue-300 b_glow"
-          />
-        </a>
-        <a href="">
-          <img
-            src="https://github.com//samuelwsz.png"
-            alt=""
-            className="text-[26px] flex items-center justify-center font-semibold text-blue-300 rounded-3xl h-40 w-64 p-1 border-2 border-blue-300 b_glow"
-          />
-        </a>
+        </Dialog.Root>
+
+        <Dialog.Root>
+          <Dialog.Trigger asChild>
+            <img
+              data-aos="fade-up"
+              src={alurageek}
+              alt="alurageekchalenge5"
+              className="text-[26px] flex items-center justify-center font-semibold text-blue-300 rounded-3xl h-40 w-64 p-1 border-2 border-blue-300 cursor-pointer b_glow"
+            />
+          </Dialog.Trigger>
+         
+        </Dialog.Root>
       </div>
     </div>
   )
