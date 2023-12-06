@@ -20,7 +20,7 @@ export default function About() {
           >
             Sobre mim
           </h1>
-          <p data-aos="fade-left">
+          <p data-aos="fade-left" className="text-justify">
             Neste momento, estou me dedicando ao aprimoramento das minhas
             habilidades em tecnologias atuais e aprofundando meu conhecimento
             nas que já possuo proficiência, em busca de uma vaga no mercado de
